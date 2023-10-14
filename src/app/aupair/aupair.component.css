@@ -1,0 +1,74 @@
+.container mat-form-field + mat-form-field{
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+  
+  .form-card {
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #e4dcdc;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  mat-form-field {
+    margin-bottom: 20px;
+ 
+  }
+  
+  mat-card-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  /* Customize colors */
+  mat-card {
+    background-color: #f5f5f5;
+  }
+  
+  mat-form-field {
+    background-color: #e4dcdc;
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .form-fields {
+    display: flex;
+    align-items: flex-start;
+  }
+  .example-section {
+  margin: 12px 10px;
+}
+
+.example-margin {
+  margin: 10px 12px;
+}
+ng-deep .mat-checkbox-inner-container {
+  margin-right: 0 !important;
+ 
+}
+
+.mat-card-search{
+  margin: 3%;
+  float: left;
+}

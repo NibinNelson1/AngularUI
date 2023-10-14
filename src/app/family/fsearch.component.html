@@ -1,0 +1,100 @@
+<div class="container">
+  <mat-card class="form-card">
+    <mat-card-header>
+      <mat-card-title>Search for Aupairs</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+
+       <div class="example-form-fields">
+       <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Aupair Present Country</mat-label>
+        <mat-select [(value)]="user.CitizenOf" multiple>
+          <mat-option *ngFor="let country of countries" [value]="country.value">{{ country.text }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Aupair Citizen Of</mat-label>
+        <mat-select [(value)]="user.CitizenOf" multiple>
+          <mat-option *ngFor="let country of countries" [value]="country.value">{{ country.text }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="example-form-fields">
+      <mat-form-field appearance="fill"  class="full-width" >
+        <mat-label>Age From</mat-label>
+        <mat-select [(value)]="user.AupairAgeFrom">
+          <mat-option *ngFor="let age of ageAupairFrom" [value]="age">{{ age }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="full-width" >
+        <mat-label>Age To</mat-label>
+        <mat-select [(value)]="user.AupairAgeFrom">
+          <mat-option *ngFor="let age of ageAupairTo" [value]="age">{{ age }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+    <div class="example-form-fields">
+      <mat-form-field class="full-width">
+        <mat-label>Available From</mat-label>
+        <input matInput [matDatepicker]="dp" >
+        <mat-hint>MM/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp              
+                        panelClass="example-month-picker">
+        </mat-datepicker>
+      </mat-form-field>
+    
+    </div> 
+    
+     
+
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit" matTooltip="Click to Search">Search</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+  <mat-card class="mat-card-search">
+    <mat-card-header>
+     <mat-card-title>Family Bert</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table>
+        <tr>
+          <td>  <img mat-card-lg-image src="https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg">
+          </td>
+          <td><p>Country: Belgium</p>
+            <p>Looking from: Feb 2024</p>
+            <p>No. of Kids: 1</p></td>
+        </tr>
+      </table>
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent">View Details</button>
+    </mat-card-actions>
+  </mat-card>
+  
+  <mat-card class="mat-card-search card-class">
+    <mat-card-header>
+     <mat-card-title>Family Nathalie</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table>
+        <tr>
+          <td>  <img mat-card-lg-image src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0">
+          <td><p>Country: Netherlands</p>
+            <p>Looking from: Dec 2023</p>
+            <p>No. of Kids: 2</p></td>
+        </tr>
+      </table>
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent">View Details</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
